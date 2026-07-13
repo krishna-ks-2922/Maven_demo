@@ -1,6 +1,10 @@
 pipeline {
     agent { label 'linux-agent' }
 
+    tools {
+        maven 'Maven'
+    }
+
     stages {
         stage('Check Tools') {
             steps {
